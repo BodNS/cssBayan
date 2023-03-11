@@ -23,19 +23,36 @@ body {
     display: flex;
     margin: auto;
     width: 80%;
-    padding: 10px;
+    padding: 1rem;
     flex-direction: column;
 }
 
-h1, h2 {
-    padding: 10px;
+ul {
+    list-style-type: none
+}
+
+ul li:first-child .image{
+    display: flex;
+}
+
+h1 {
+    padding: 1rem 0;
     color: var(--black-color);
 }
 
-.line {
+h3 {
+    /* padding: 1rem 0; */
+    color: var(--blue-color)
+}
+
+hr {
     height: 0;
     background-color: var(--line-color);
     width: 100%;
+}
+
+.mem {
+    padding: 1rem 0;
 }
 
 .info {
@@ -43,25 +60,24 @@ h1, h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    /* padding: 1rem 0; */
 }
 
 .image {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     margin: auto;
-    padding: 10px;
+    padding: 1rem 0 0;
     display: flex;
     justify-content: center;
     overflow: hidden;
+    display: none;
+    
 }
 
 img {
-    width: inherit;
-    height: inherit;
     overflow: hidden;
     background-repeat: no-repeat;
     object-fit: cover;
-    width: inherit;
-    
 }
+
