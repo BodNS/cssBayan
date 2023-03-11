@@ -22,7 +22,7 @@ body {
 .wrapper {
     display: flex;
     margin: auto;
-    width: 80%;
+    width: 70%;
     padding: 1rem;
     flex-direction: column;
 }
@@ -35,14 +35,28 @@ ul li:first-child .image{
     display: flex;
 }
 
+ul li:first-child .plus {
+    transform: rotate(45deg);
+    visibility: hidden;
+}
+
+ul li:first-child h3 {
+    color: var(--black-color);
+}
+
+.plus  {
+    visibility: hidden;
+    font-size: 2rem;
+}
+
 h1 {
     padding: 1rem 0;
     color: var(--black-color);
 }
 
 h3 {
-    /* padding: 1rem 0; */
-    color: var(--blue-color)
+    color: var(--blue-color);
+    font-size: 2rem;
 }
 
 hr {
@@ -72,7 +86,6 @@ hr {
     justify-content: center;
     overflow: hidden;
     display: none;
-    
 }
 
 img {
@@ -81,3 +94,22 @@ img {
     object-fit: cover;
 }
 
+ul:hover .plus{
+    visibility: visible;
+}
+
+ul:hover li:first-child .plus{
+    visibility: visible;
+}
+
+ul:hover h3 {
+    color: var(--black-color);
+}
+
+li:hover .image{
+    display: flex;
+}
+
+li:hover .plus {
+    transform: rotate(45deg);
+}
