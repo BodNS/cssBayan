@@ -18,6 +18,8 @@ body {
     font-size: 1rem;
 }
 
+
+
 .wrapper {
     display: flex;
     margin: auto;
@@ -113,3 +115,38 @@ input:checked + label .image {
     transition: height ease 0.02s;
 }
 
+@media screen and (max-width: 320px) {
+    h3 {
+        font-size: 0.6rem;
+    }
+    .plus {
+        font-size: 0.8rem; 
+    }
+    h1 {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 619px) {
+    h3 {
+        font-size: 0.8rem;
+    }
+    .plus {
+        font-size: 1rem; 
+    }
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 820px) {
+    h3 {
+        font-size: 1rem;
+    }
+    .plus {
+        font-size: 1.5rem; 
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+}
